@@ -38,9 +38,10 @@ cd ApiRest
 #### 🔑 Autenticación JWT:
 
 -  Devuelve un token que debe enviarse en el encabezado Authorization: Bearer <token>.
+- Post para iniciar sesión
 
-```http
-POST http://localhost:8080/api/auth/login para iniciar sesión
+```http 
+http://localhost:8080/api/auth/login
 ```
 
 | Parameter  | Type       | Description                |
@@ -66,14 +67,18 @@ POST http://localhost:8080/api/auth/login para iniciar sesión
 #### 👽 Gestión de personajes:
 
 - Descripción: Devuelve todos los personajes disponibles.
+- GET → Lista de personajes (sin paginación).
+
 ```http
-GET http://localhost:8080/api/characters → Lista de personajes (sin paginación).
+http://localhost:8080/api/characters
 ```
 
 
 - Descripción: Devuelve los personajes correspondientes a una página específica.
+- GET → Lista de personajes (con paginación).
+
 ```http
-GET http://localhost:8080/api/characters?page=2
+http://localhost:8080/api/characters?page=2
 ```
 
 
