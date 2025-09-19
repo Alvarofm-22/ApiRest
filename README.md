@@ -40,7 +40,7 @@ cd ApiRest
 -  Devuelve un token que debe enviarse en el encabezado Authorization: Bearer <token>.
 - Post para iniciar sesión
 
-```http 
+```https
 http://localhost:8080/api/auth/login
 ```
 
@@ -69,7 +69,7 @@ http://localhost:8080/api/auth/login
 - Descripción: Devuelve todos los personajes disponibles.
 - GET → Lista de personajes (sin paginación).
 
-```http
+```https
 http://localhost:8080/api/characters
 ```
 
@@ -77,7 +77,7 @@ http://localhost:8080/api/characters
 - Descripción: Devuelve los personajes correspondientes a una página específica.
 - GET → Lista de personajes (con paginación).
 
-```http
+```https
 http://localhost:8080/api/characters?page=2
 ```
 
